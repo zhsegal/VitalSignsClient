@@ -34,7 +34,7 @@ app.post('/upload_video', (req, res) => {
             return res.send(req.fileValidationError);
         }
         else if (!req.file) {
-            return res.send('Please select an image to upload');
+            return res.sendFile('public/show_hr.html', {root: __dirname });
         }
         else if (err instanceof multer.MulterError) {
             return res.send(err);
