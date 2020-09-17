@@ -17,48 +17,47 @@
     <!-- NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <a class="navbar-brand" href="index.html">AMT</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+    
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="upload_video.html">Get Your Vitals <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="upload_video.html">Upload Video <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="demo_video.html">Watch Demo</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Contact Us</a>
-          </li>
-
-
+          
+          
           </li>
         </ul>
-
+        
       </div>
     </nav>
 
-      <!-- Upload video-->
+      
+      <!-- READINGS-->
+    <section id="reading">
       <div class="row">
-      <div class="col">
-      <form method="POST" action='/upload_video' enctype="multipart/form-data">
-        <h1>Get your vital signs now - for free!</h1>
-        <h2>Just upload a 10 seconds video of your face - </h2>
-        <h2>and we will read your vital signs directly from the video</h2>
-        
-        <div class="form-group">
-          <label for="exampleFormControlFile1">Upload Video</label>
-          <input type="file" class="form-control-file" name="uploaded_video">
-        </div>
-        <div>
-          <input type="submit" name="upload_video_btn" value="Upload">
-        </div>
-      </form>
-    </div>
-  </div>
+        <div class="jumbotron">
+          <h1 class="display-4">Your oxygen saturation:</h1>
+          <h1>100%</h1>
+            <p class="lead">What is your realoxygen saturation?</p>
+            <hr class="my-4">
+            
+            <form>
+                <div class="form-group">
+                  <label for="formControlRange">Your real oxygen saturation</label>
+                  <input type="range" class="form-control-range" id="formControlRange">
+                </div>
+              </form>
+              <a class="btn btn-primary btn-lg" href="index.html" role="button">Go Home</a>
+          </div>
+  
+      </div>
+      </section>
       
       <!-- Footer-->
       
@@ -68,7 +67,7 @@
           <i class="social-icon fab fa-twitter"></i>
           <i class="social-icon fab fa-instagram"></i>
           <i class="social-icon fas fa-envelope"></i>
-          <p>© Copyright 2020 AMT</p>
+          <p>© Copyright 2018 TinDog</p>
         </div>
       </footer>
     

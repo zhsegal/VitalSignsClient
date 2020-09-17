@@ -28,6 +28,7 @@ h1 {
 .reading-box {
   text-align: center;
   padding: 5%;
+  font-size: 25px;
 }
 
 body {
@@ -81,7 +82,7 @@ p {
 /* Navigation Bar */
 
 .navbar {
-  padding: 0 0 4.5rem;
+  padding: 0 0 0rem;
 }
 
 .navbar-brand {
@@ -97,6 +98,19 @@ p {
 .nav-link {
   font-size: 1.2rem;
   font-family: "Montserrat-Light";
+}
+
+/* header */
+.lead{
+  font-size: 40px;
+}
+
+.header_text{
+  font-size: 28px;
+}
+
+.header-photo{
+  padding-top: 8rem;
 }
 
 /* Buttons */
@@ -126,70 +140,8 @@ p {
   top: 20%;
 }
 
-/* Features Section */
 
-#features {
-  position: relative;
-}
 
-.feature-title {
-  font-size: 1.5rem;
-}
-
-.feature-box {
-  padding: 4.5%;
-}
-
-.icon {
-  color: #ef8172;
-  margin-bottom: 1rem;
-}
-
-.icon:hover {
-  color: #ff4c68;
-}
-
-/* Testimonial Section */
-
-#testimonials {
-  background-color: #ef8172;
-}
-
-.testimonial-text {
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-.testimonial-image {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
-}
-
-#press {
-  background-color: #ef8172;
-  padding-bottom: 3%;
-}
-
-.press-logo {
-  width: 15%;
-  margin: 20px 20px 50px;
-}
-
-/* Pricing Section */
-
-#pricing {
-  padding: 100px;
-}
-
-.price-text {
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-.pricing-column {
-  padding: 3% 2%;
-}
 
 /* CTA Section */
 

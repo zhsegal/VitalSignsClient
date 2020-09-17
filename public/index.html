@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vital Signs</title>
+  <title>AMT Vital Signs</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Ubuntu:wght@300&display=swap"
     rel="stylesheet">
 
@@ -20,7 +20,7 @@
 
     <!-- NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-      <a class="navbar-brand" href="index.html">Vital Signs</a>
+      <a class="navbar-brand" href="index.html">AMT</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,10 +29,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="upload_video.html">Upload Video <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="upload_video.html">Get Your Vitals <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="demo_video.html">Watch Demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
           </li>
 
 
@@ -47,18 +50,17 @@
 
       <div class="col-lg-6">
         <div class="jumbotron">
-          <h1 class="display-4">Hello, world!</h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-            featured content or information.</p>
+          <h1 class="display-4">AMT AI Based Remote Vital Signs Monitroing</h1>
+          <p class="lead">Get your vital signs measurments - from your phone!</p>
           <hr class="my-4">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <a class="btn btn-primary btn-lg" href="demo_video.html" role="button">Watch Demo</a>
-          <a class="btn btn-primary btn-lg" href="upload_video.html" role="button">Upload Your Video</a>
+          <p class = 'header_text'>Use our system to get your vital signs now - it's safe, it's easy - and it's free!!</p>
+          <a class="btn btn-primary btn-lg" href="demo_video.html" role="button">Watch Our Demo</a>
+          <a class="btn btn-primary btn-lg" href="upload_video.html" role="button">Get Your Vital Signs!</a>
         </div>
       </div>
 
       <div class="col-lg-6">
-        <img class="title-image" src="images/video.png" alt="iphone-mockup">
+        <img class=" mx-auto d-block header-photo" src="images/framed_image.png" alt="iphone-mockup">
       </div>
 
     </div>
@@ -69,50 +71,26 @@
 
     <!-- CONTACT-->
     <form>
-      <div class="form-row">
+      <h3> Contact Us</h3>
+      <div class="form-row" id = "contact">
+        <div class="form-group col-md-6">
+          <label for="inputAddress2">Name</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Your Name">
+        </div>
+        
         <div class="form-group col-md-6">
           <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
         </div>
-        <div class="form-group col-md-6">
-          <label for="inputPassword4">Password</label>
-          <input type="password" class="form-control" id="inputPassword4">
-        </div>
+        
       </div>
       <div class="form-group">
         <label for="inputAddress">Address</label>
         <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
       </div>
-      <div class="form-group">
-        <label for="inputAddress2">Address 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputCity">City</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="form-group col-md-4">
-          <label for="inputState">State</label>
-          <select id="inputState" class="form-control">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
-        </div>
-        <div class="form-group col-md-2">
-          <label for="inputZip">Zip</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Check me out
-          </label>
-        </div>
-      </div>
-      <button type="submit" class="btn btn-primary">Sign in</button>
+         
+      
+      <button type="submit" class="btn btn-primary">Send</button>
     </form>
   </div>
 
@@ -122,7 +100,7 @@
       <i class="social-icon fab fa-twitter"></i>
       <i class="social-icon fab fa-instagram"></i>
       <i class="social-icon fas fa-envelope"></i>
-      <p>© Copyright 2018 TinDog</p>
+      <p>© Copyright 2020 ATM</p>
     </div>
   </footer>
 
