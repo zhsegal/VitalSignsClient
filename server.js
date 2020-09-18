@@ -2,12 +2,13 @@ const express=require('express')
 const multer=require('multer')
 const path=require('path')
 const helpers = require('./helpers');
-
+const bodyParser=require('body-parser')
 
 const app=express()
 const port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.urlencoded({extended:true}))
 
 console.log((__dirname + '/public'))
 
@@ -48,7 +49,22 @@ app.post('/upload_video', (req, res) => {
     });
 });
 
+app.post('/show_hr',(req, res) => {
+    console.log(req.body)
+    res.sendFile('public/hemoglobin.html', {root: __dirname })
+    
+})
 
+app.post('/hemoglobin',(req, res) => {
+    res.sendFile('public/blood_pressure.html', {root: __dirname })
+})
 
+app.post('/blood_pressure',(req, res) => {
+    res.sendFile('public/saturation.html', {root: __dirname })
+})
+
+app.post('/saturation',(req, res) => {
+    res.sendFile('public/index.html', {root: __dirname })
+})
 
 app.listen(port, () => console.log(`Listening on port ${port}...`));

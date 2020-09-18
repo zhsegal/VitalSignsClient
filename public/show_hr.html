@@ -52,13 +52,14 @@
           <p class="lead">Is that your real heart rate?</p>
           <hr class="my-4">
 
-          <form>
+          <form method="post" action='/show_hr'>
             <div class="form-group">
               <label for="formControlRange">Your real heart rate</label>
-              <input type="range" class="form-control-range" min="30" max="120" id="formControlRange">
+              <input type="range" class="form-control-range" min="30" max="120" id="formControlRange" name="hr">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
             </div>
           </form>
-          <a class="btn btn-primary btn-lg" href="hemoglobin.html" role="button">See hemoglobin</a>
+          
         </div>
 
       </div>
@@ -72,7 +73,7 @@
         <i class="social-icon fab fa-twitter"></i>
         <i class="social-icon fab fa-instagram"></i>
         <i class="social-icon fas fa-envelope"></i>
-        <p>© Copyright 2018 TinDog</p>
+        <p>© Copyright 2020 AMT</p>
       </div>
     </footer>
 

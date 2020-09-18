@@ -47,13 +47,15 @@
             <p class="lead">What is your real hemoglobin?</p>
             <hr class="my-4">
             
-            <form>
+            <form method="post" action='/hemoglobin'>
                 <div class="form-group">
                   <label for="formControlRange">Your real hemoglobin rate</label>
                   <input type="range" class="form-control-range" id="formControlRange">
+                  <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+
                 </div>
               </form>
-              <a class="btn btn-primary btn-lg" href="blood_pressure.html" role="button">See blood pressure</a>
+              
           </div>
   
       </div>
