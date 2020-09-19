@@ -38,7 +38,8 @@ app.post('/upload_video', (req, res) => {
             return res.send(req.fileValidationError);
         }
         else if (!req.file) {
-            return res.sendFile('public/show_hr.html', {root: __dirname });
+            return  res.render('vitalSign',{vitalSign:'heart rate', vitalSignValue: '58',nextVital:'hemoglobin'})
+            ;
         }
         else if (err instanceof multer.MulterError) {
             return res.send(err);
@@ -49,26 +50,31 @@ app.post('/upload_video', (req, res) => {
 
         // Display uploaded image for user validation
         // res.sendFile('public/show_hr.html', {root: __dirname })
-        res.render('vitalSign',{vitalSign:'try try try try'})
+        res.render('vitalSign',{vitalSign:'heart rate', vitalSignValue: '58',nextVital:'hemoglobin'})
     });
 });
 
-app.post('/show_hr',(req, res) => {
+
+
+app.post('/hemoglobin',(req, res) => {
     console.log(req.body)
-    res.sendFile('public/hemoglobin.html', {root: __dirname })
+    res.render('vitalSign',{vitalSign:'hemoglobin', vitalSignValue: '10.2',nextVital:'blood_pressure'})
     
 })
 
-app.post('/hemoglobin',(req, res) => {
-    res.sendFile('public/blood_pressure.html', {root: __dirname })
-})
-
 app.post('/blood_pressure',(req, res) => {
-    res.sendFile('public/saturation.html', {root: __dirname })
+    res.render('vitalSign',{vitalSign:'blood pressure', vitalSignValue: '120/80', nextVital:'saturation'})
 })
 
 app.post('/saturation',(req, res) => {
-    res.sendFile('public/index.html', {root: __dirname })
+    res.render('vitalSign',{vitalSign:'oxygen saturation',  vitalSignValue: '100',nextVital:'home'})
 })
+
+app.post('/home',(req, res) => {
+    res.sendFile('public/index.html', {root: __dirname })
+});
+
+
+
 
 app.listen(port, () => console.log(`Listening on port ${port}...`));
