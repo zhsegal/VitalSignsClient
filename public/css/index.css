@@ -145,3 +145,94 @@ p {
     position: static;
   }
 }
+
+.top-image{
+  margin-top: 150px;
+}
+  #contact{
+    margin-top: 200px;
+  }
+  @media screen and (max-width: 600px) {
+    #contact{
+    margin-top: 50px;
+  }
+  .top-image{
+  margin-top: 60px;
+}
+
+
+
+
+
+
+.top-image{
+  margin-top: 150px;
+}
+  #contact{
+    margin-top: 200px;
+  }
+  @media screen and (max-width: 600px) {
+    #contact{
+    margin-top: 50px;
+  }
+  .top-image{
+  margin-top: 60px;
+}
+
+
+
+
+.framed-image{
+  margin-top: 120px;padding: 36px;width: 100%;
+}
+
+.btn-send{
+  font-weight: 500;
+}
+
+
+
+@media (max-width: 768px) {
+.btn {
+  font-size:14px;
+  padding:6px 10px;
+  
+}
+.top-image{
+  font-size: 28px;
+}
+.framed-image{
+  margin-top: 30px;padding: 36px;width: 100%;
+}
+.second-text{
+  font-size: 18px;
+}
+.main-text{
+  font-size: 18px;
+}
+.main-text2{
+  font-size: 14px;
+}
+}
+
+@media (min-width: 768px) {
+.btn {
+  font-size:12px;
+  padding:6px 12px;
+}
+}
+
+@media (min-width: 992px) {
+.btn {
+  font-size:14px;
+  padding:8px 12px;
+}
+}
+
+@media (min-width: 1200px) {
+.btn {
+  padding:10px 16px;
+  font-size:18px;
+}
+}
+}
