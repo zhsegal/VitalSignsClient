@@ -190,7 +190,15 @@ p {
   font-weight: 500;
 }
 
-
+@media screen and (max-width: 600px) {
+  .preview-video video{
+    width: 100%;
+  }
+  .ft{
+    margin-top: 36px;
+  }
+  
+}
 
 @media (max-width: 768px) {
 .btn {
@@ -235,4 +243,4 @@ p {
   font-size:18px;
 }
 }
-}
+} }
