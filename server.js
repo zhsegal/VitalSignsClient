@@ -28,7 +28,10 @@ app.use(require('express-session')({
     saveUninitialized: true
 }));
 
-const mongoURI = "mongodb://localhost:27017/customersDB";
+const mongoURIlocal = "mongodb://localhost:27017/customersDB";
+const mongoURI = "mongodb+srv://admin-zvika:5293612aA!@cluster0.ebxa4.mongodb.net/customersDB";
+
+
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
 const conn = mongoose.createConnection(mongoURI, {
     useNewUrlParser: true,
@@ -68,7 +71,7 @@ console.log((__dirname + '/public'))
 // });
 
 const storage = new GridFsStorage({
-    url: mongoURI,
+    url: mongoURIlocal,
     file: (req, file) => {
       return new Promise((resolve, reject) => {
         crypto.randomBytes(16, (err, buf) => {
