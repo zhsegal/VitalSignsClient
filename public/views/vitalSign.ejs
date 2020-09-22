@@ -16,11 +16,11 @@
 
 <body>
 
-  
 
-    <!-- NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm">
-      <div class="container">
+
+  <!-- NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm">
+    <div class="container">
       <a class="navbar-brand bg-light text-dark m-2 px-3 py-0 rounded shadow-sm" href="index.html">AMT</a>
       <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,60 +48,63 @@
 
       </div>
     </div>
-    </nav>
-    <section style="background-image: url(https://cdn.jsdelivr.net/gh/froala/design-blocks@master/dist/imgs//shapes/8.svg);background-repeat: no-repeat;
-    background-size: cover;" >
+  </nav>
+  <section style="background-image: url(https://cdn.jsdelivr.net/gh/froala/design-blocks@master/dist/imgs//shapes/8.svg);background-repeat: no-repeat;
+    background-size: cover;">
 
     <div class="container" style="min-height: 1000px;">
-    <!-- READINGS-->
-    <section id="reading">
-      <div class="row">
-        <div class="col-12 col-lg-8 offset-lg-2">
-        <div class="jumbotron">
-          <h1 class="h4 main-text" style="font-size: 140%;">Your calculated <%= vitalSign %>:</h1>
-          <h1 class="h4 text-center" style="margin-top: 5%;"><%= vitalSignValue %> </h1>
-          <p class="lead main-text2" style="font-size: 20px;color: black; margin-top: 5%;">Is that your real <%= vitalSign %>?</p>
-          <hr class="my-4">
-            
-          <form method="post" action='/<%= vitalRout %>'>
-            <div class="form-group " style="text-align:center;">
-              <div class="col-md-5 mx-auto">
-              <label for="formControlRange">Your real <%= vitalSign %></label>
+      <!-- READINGS-->
+      <section id="reading">
+        <div class="row">
+          <div class="col-12 col-lg-8 offset-lg-2">
+            <div class="jumbotron">
+              <h1 class="h4 main-text" style="font-size: 140%;">Your calculated <%= vitalSign %>:</h1>
+              <div id="result" value="<%= vitalSign %>"></div>
+              <p class="lead main-text2" style="font-size: 20px;color: black; margin-top: 5%;">Is that your real
+                <%= vitalSign %>?</p>
+              <hr class="my-4">
 
-              <input type="text" class="form-control  form-control-lg " min="30" max="120" id="formControlRange" name="value">
-              <button type="submit" class="btn btn-primary btn-lg text" style="margin-top: 5%;">Submit</button>
+              <form method="post" action='/<%= vitalRout %>'>
+                <div class="form-group " style="text-align:center;">
+                  <div class="col-md-6 mx-auto">
+                    <label for="formControlRange">Your real <%= vitalSign %></label>
+
+                    <input type="text" class="form-control  form-control-lg " min="30" max="120" id="formControlRange"
+                      name="value">
+                    <button type="submit" class="btn btn-primary btn-lg text" style="margin-top: 5%;">Submit</button>
+                  </div>
+                </div>
+              </form>
+
             </div>
           </div>
-          </form>
-          
         </div>
-      </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer-->
+      <!-- Footer-->
 
-    <footer class="fdb-block footer-small fp-active" data-block-type="footers" data-id="2">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <p>© 2020 AMT. All Rights Reserved</p>
+      <footer class="fdb-block footer-small fp-active" data-block-type="footers" data-id="2">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <p>© 2020 AMT. All Rights Reserved</p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
+      </footer>
+    </div>
   </section>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"></script>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="view.js" charset="utf-8"></script>
 </body>
 
 </html>
