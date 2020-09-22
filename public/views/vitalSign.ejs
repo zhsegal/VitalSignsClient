@@ -63,11 +63,12 @@
           <p class="lead main-text2" style="font-size: 20px;color: black;">- Is that your real <%= vitalSign %>?</p>
           <hr class="my-4">
             
-          <form method="post" action='/<%= nextVital %>'>
+          <form method="post" action='/<%= vitalRout %>'>
             <div class="form-group">
               <label for="formControlRange">Your real <%= vitalSign %></label>
-              <input type="range" class="form-control-range" min="30" max="120" id="formControlRange" name="hr">
-              <button type="submit" class="btn btn-primary btn mt-3">Submit</button>
+
+              <input type="range" class="form-control-range" min="30" max="120" id="formControlRange" name="value">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
             </div>
           </form>
           
