@@ -1,98 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vital Signs</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMT Vital Signs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
-    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
 </head>
+
 <body>
-    
-    <div class="container-fluid">
-        
-      <!-- NAVBAR-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" href="index.html">AMT</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="upload_video.html">Get Your Vitals <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="demo_video.html">Watch Demo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Contact Us</a>
-            </li>
-  
-  
-            </li>
-          </ul>
-  
-        </div>
-      </nav>
 
-      <!-- show video-->
-      <div class= video-player>
-      <h1>Video Based Vital Signs Monitoring</h1>
-      <h2> Our AI-based remote vital signs monitoring can read your vital sings with medical grade precision</h2>
-        <video width="320" height="240" controls>
-        <source src="images/zvika.mp4" type="video/mp4">
-        
-      Your browser does not support the video tag.
-      </video>
-      </div>
+  <div>
 
-      <!-- READINGS-->
-    <section id="reading">
-      <div class="row">
-      <div class="reading-box col-lg-3">
-          
-          Blood Pressure
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm">
+      <div class="container">
+      <a class="navbar-brand bg-light text-dark m-2 px-3 py-0 rounded shadow-sm" href="index.html">AMT</a>
+      <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white " href="index.html">Homepage <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="upload_video.html">Get Your Vitals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white border-bottom" href="demo_video.html">Watch Demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html#contact">Contact Us</a>
+          </li>
+
+
+          </li>
+        </ul>
+
       </div>
-      <div class="reading-box col-lg-3">
-          
-  
-          Pulse
-      </div>
-      <div class="reading-box col-lg-3">
-         
-  
-          Hemoglobin
-      </div>
-      <div class="reading-box col-lg-3">
-           
-        Oxygen Saturation
     </div>
-      </div>
-      </section>
-      
-
-      
-      <!-- Footer-->
-      
-      <footer class="white-section" id="footer">
-        <div class="container-fluid">
-          <i class="social-icon fab fa-facebook-f"></i>
-          <i class="social-icon fab fa-twitter"></i>
-          <i class="social-icon fab fa-instagram"></i>
-          <i class="social-icon fas fa-envelope"></i>
-          <p>© Copyright 2020 ATM</p>
+    </nav>
+    <section style="background-image: url(https://cdn.jsdelivr.net/gh/froala/design-blocks@master/dist/imgs//shapes/8.svg);background-repeat: no-repeat;
+    background-size: cover;">
+    <div class="container" style="min-height: 1000px;">
+      <div class="row" >
+        <div class="col-12">
+          <p class="text-center h3 text-dark" style="margin-top: 120px;">Video Based Vital Signs Monitoring</p>
         </div>
-      </footer>
-    
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  
-    </body>
+        <div class="col-12">
+          <p class="text-center h5 text-dark second-text" style="margin-top: 24px;">Our AI-based remote vital signs monitoring can read your vital sings with medical grade precision</p>
+        </div>
+        <div class="col-md-4 offset-md-4 mt-4 preview-video">
+          <video width="320" height="240" controls>
+            <source src="images/zvika.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="col-12" style="margin-top: 140px;"></div>
+        <div class="col-6 col-lg-3 text-center h5 d-flex flex-column">
+         
+          <i class="fas fa-tint fa-2x mb-2"></i>
+          Blood Pressure</div>
+          <div class="col-6 col-lg-3 text-center h5 d-flex flex-column">
+            <i class="fas fa-file-medical-alt fa-2x mb-2"></i>
+          Pulse</div>
+          <div class="col-6 col-lg-3 text-center h5 d-flex flex-column ft">
+            <i class="fas fa-viruses fa-2x mb-2"></i>
+          Hemoglobin</div>
+          <div class="col-6 col-lg-3 text-center h5 d-flex flex-column ft">
+            <i class="fas fa-walking fa-2x mb-2"></i>
+          Oxygen Saturation</div>
+       
+        
+      </div>  
+    </div>
+    <footer class="fdb-block footer-small fp-active" data-block-type="footers" data-id="2">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <p>© 2020 AMT. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
 </html>
