@@ -41,10 +41,10 @@ const conn = mongoose.createConnection(mongoURI, {
 const customerSchema = new mongoose.Schema({
     customer_id: String,
     video: String,
-    heart_rate: Number,
-    hemoglobin: Number,
-    blood_pressure: Number,
-    saturation: Number
+    heart_rate: String,
+    hemoglobin: String,
+    blood_pressure: String,
+    saturation: String
 })
 
 const Customer = mongoose.model("Customer", customerSchema)

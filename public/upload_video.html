@@ -22,83 +22,86 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm">
       <div class="container">
-      <a class="navbar-brand bg-light text-dark m-2 px-3 py-0 rounded shadow-sm" href="index.html">AMT</a>
-      <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
-      </button>
+        <a class="navbar-brand bg-light text-dark m-2 px-3 py-0 rounded shadow-sm" href="index.html">AMT</a>
+        <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link text-white " href="index.html">Homepage <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white border-bottom" href="upload_video.html">Get Your Vitals</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="demo_video.html">Watch Demo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white"  href="index.html#contact">Contact Us</a>
-          </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white " href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white border-bottom" href="upload_video.html">Get Your Vitals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="demo_video.html">Watch Demo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html#contact">Contact Us</a>
+            </li>
 
 
-          </li>
-        </ul>
+            </li>
+          </ul>
 
+        </div>
       </div>
-    </div>
     </nav>
     <section style="background-image: url(https://cdn.jsdelivr.net/gh/froala/design-blocks@master/dist/imgs//shapes/8.svg);background-repeat: no-repeat;
     background-size: cover;">
-    <div class="container" style="min-height: 1000px;">
-      <div class="row" >
-        <div class="col-12">
-          <p class="text-center h3 text-dark" style="margin-top: 120px;">Get your vital signs now - <span class="text-primary">for free!</span></p>
-        </div>
-        <div class="col-12">
-          <p class="text-center h5 text-dark second-text" style="margin-top: 24px;">Just upload a 10 seconds video of your face -
-            and we will read your vital signs directly from the video</p>
-        </div>
-        <div class="col-md-12 text-center">
-        
-            <form method="POST" action='/upload_video' enctype="multipart/form-data" class="mt-4">
+      <div class="container" >
+        <div class="row">
+          <div class="col-12">
+            <p class="text-center h2 text-dark" style="margin-top: 10%;">Get your vital signs now - <span
+                class="text-primary">for free!</span></p>
+          </div>
+          <div class="col-12">
+            <p class="text-center h5 text-dark second-text" style="margin-top: 24px;">Just upload a <span
+                class="text-primary">10 seconds video </span> of your face -
+              <br> and we will <span class="text-primary"> read your vital signs </span> directly from the video</p>
+          </div>
+          <div class="col-md-12 text-center">
+
+            <form id="testForm" method="POST" action='/upload_video' enctype="multipart/form-data" class="mt-4">
               <div class="form-group">
-                <label class="h5 d-block" for="exampleFormControlFile1">Upload Video</label>
+                <label class="h5 d-block mt-7" for="exampleFormControlFile1">Upload Your Video</label>
                 <input class="mx-auto mt-4" type="file" class="form-control-file" name="uploaded_video">
               </div>
               <div>
-                <input class="btn btn-primary" type="submit" name="upload_video_btn" value="Get Started">
+                <button class="btn btn-primary mt-4" id="btnFetch" type="submit" name="upload_video_btn">Get Vital
+                  Signs</button>
               </div>
             </form>
-         
-        </div>
-       
-        
-      </div>  
-    </div>
-    <footer class="fdb-block footer-small fp-active" data-block-type="footers" data-id="2">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <p>© 2020 AMT. All Rights Reserved</p>
+
           </div>
+
+
         </div>
       </div>
-    </footer>
-  </section>
+      <footer class="fdb-block footer-small fp-active" data-block-type="footers" data-id="2" style="margin-top: 140px;">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <p>© 2020 AMT. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
 
 
 </body>

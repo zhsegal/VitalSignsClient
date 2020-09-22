@@ -16,6 +16,16 @@ h1 {
   padding-bottom: 2.5rem;
 }
 
+.h2{
+  font-size: 300%;
+
+}
+.h5{
+  font-size: 200%;
+  margin-top: 5%;
+
+}
+
 .nav-link{
   font-size: 16px;
   font-weight: 500;
@@ -147,10 +157,16 @@ p {
 }
 
 .top-image{
-  margin-top: 150px;
+  margin-top: 30%;
+  width: 90%;
 }
+.top-text{
+  margin-top: 20%;
+  
+}
+
   #contact{
-    margin-top: 200px;
+    margin-top: 10%;
   }
   @media screen and (max-width: 600px) {
     #contact{
@@ -195,7 +211,7 @@ p {
     width: 100%;
   }
   .ft{
-    margin-top: 36px;
+    margin-top:20%;
   }
   
 }
@@ -213,7 +229,7 @@ p {
   margin-top: 30px;padding: 36px;width: 100%;
 }
 .second-text{
-  font-size: 18px;
+  font-size: 200%;
 }
 .main-text{
   font-size: 18px;
