@@ -12,6 +12,6 @@ $(document).ready(function() {
       setTimeout(function(){
         /*submit the form after 5 secs*/
         $('#testForm').submit();
-    },5000)
+    },8000)
     });
 });
