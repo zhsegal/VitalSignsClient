@@ -88,14 +88,23 @@ const storage = new GridFsStorage({
     });
   }
 });
-const upload = multer({ storage: storage, fileFilter: helpers.imageFilter });
+const upload = multer({ storage: storage,
+  fileFilter: (req, file, cb) => {
+   if (!file.originalname.match(/\.(avi|AVI|mkv|MKV|mp4|MP4|wmv|WMV|mpg|MPG|mpeg|MPEG)$/)) {
+           return cb(null, false);
+       }
+       cb(null, true);
+   } });
 
 
 app.post("/upload_video", upload.single("uploaded_video"), (req, res) => {
-  if (req.fileValidationError) {
-    res.render('vitalSign', { vitalSign: 'heart rate', vitalSignValue: '58', vitalRout: 'heart_rate' })
+  if (!req.file) {
+    console.log("No file received or invalid file type");
+    // return   res.send('dsa')
+    return   res.sendFile('public/re_upload_video.html', { root: __dirname })
+
     ;
-  }
+}
   
   var patient = new Customer({ customer_id: req.sessionID })
   patient.save()
